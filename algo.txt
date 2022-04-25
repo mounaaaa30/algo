@@ -1,0 +1,19 @@
+ALGORITHM jomla
+VAR
+
+ch:CHAR
+nbchar:=0 , nb vowls:=0 :INTEGER
+nb_word:=1
+BEGIN
+    write("this sentecez must end with a point")
+    WHILE (ch<>  ".") DO
+    nb_char=nb_char+1
+    END_WHILE
+    IF (ch:=" ") THEN
+        nb_word=nb_word+1
+    END_IF
+    IF (ch:="a","e","u","i","o","y"
+     or "A","E","U","I","O","Y") THEN
+        nb_vowls:=nb_vowls+1
+    END_IF
+END
